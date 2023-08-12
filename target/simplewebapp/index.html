@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 	<head>
 		<meta charset="ISO-8859-1">
-		<title>Welcome To Sample Web Application !!</title>
+		<title>Java Web App</title>
 	</head>
-	<body>
-		<h1>Login to Sample Web Application</h1>
+	<body style="background-color: honeydew;">
+		<h1 style="text-align: center; font-size: 30px;">Web Application</h1>
+		<div style="align-content: center;">
+			<form method="post" action="LoginServlet">
+				<p>
+					<label>User Name:</label>
+					<input type="text" name="userName" size="20"><br>
+					<label>Password:</label>
+					<input type="text" name="password" size="20">
+				</p>
+				<p>
+					<input type="submit" name="Submit" value="Sign In">&nbsp;
+					<a href="signUp.html">Sign Up</a>
+				</p>
+			</form>
+		</div>
+		<!--
 		<a href="login.html">Login</a>
 		<a href="LogoutServlet">Logout</a>
+		-->
 	</body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Sign Up</title>
+</head>
+<body style="background-color: honeydew;">
+    <h1 style="text-align: center; font-size: 30px;">Sign up for service</h1>
+    <form method="post" action="SignUpServlet">
+        <p>
+            First name: <input type="text" name="firstName">&nbsp;
+            Last Name: <input type="text" name="lastName">
+        </p>
+        <p>
+            Email: <input type="text" name="email">&nbsp;
+            Password: <input type="text" name="password"><br>
+            Password must be 8-15 characters long and contain at least 1 lower case character,
+             one upper case character, and one numerical character.
+        </p>
+        <p>
+            <input type="submit" name="Submit" value="Submit">&nbsp;
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
