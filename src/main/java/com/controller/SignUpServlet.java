@@ -1,4 +1,4 @@
-package servlets;
+package com.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -20,7 +20,13 @@ public class SignUpServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.println("New Servlet is working!");
+        out.println("<html>");
+        out.println("<head></head>");
+        out.println("<body>");
+        out.println("Hello Java Servlet");
+        out.println("</body>");
+        
+        out.println("</html>");
         out.close();
     }
     
